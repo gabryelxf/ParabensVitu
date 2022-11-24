@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parabéns!!</title>
+</head>
+<body>
+
+<style>
+  body {
+    background: #0e1013;
+  }
+
+  h1,h2 {
+    max-width: 90%;
+    text-align: center;
+    display: block;
+    margin: 60px auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 1,5em;
+    
+  }
+
+  p{
+    
+    color: #fff;
+  }
+  
+
+  h2::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .1s infinite;
+  }
+
+  
+a{
+  color: white;
+}
+
+.link{
+  margin-left:90%;
+}
+
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
+
+<a class="link" href="textoCompleto.html" >texto completo</a>
+
+
+<h1>
+  🥳 Vitinhooo Parabéns!!! 🥳<br><br>⚕️
+</h1>
+
+<h2> 
+  
+    @@Parabéns por mais essa etapa na sua vida.@@ 
+
+  Parabéns por estar cada vez mais superando os desafio e conquistando seus objetivos.@@
+
+  E olha só aquele menino magrelo que me acopanhava em madrugadas de farm e jogos, hoje está cursando medicina e indo para o internato. Eu não poderia esperar menos.  
+  Tenho muita fé em ti e quero levar tua amizade para toda minha vida assim como você irá levar a profissão para a sua.@@ 
+
+  E não ache ruim que daqui uns anos eu fique te ligando de madrugada para tirar dúvidas e me dizer o que fazer por conta de crianças ou porque estou gripado kk.@@  
+
+  É de grande sorte de ter lhe conhecido e cada dia poder reafirmar nossa amizade, não por conversas ou por atos, mas sim por aquilo que sentimos no coração.@@ 
+
+  Obrigado por ser essa pessoa tão cativante, e saiba que você inspira muitos, e como disse Paul Éluard "Muito antes é poeta aquele que inspira do que aquele que é inspirado". 
+  E meu amigo, você é o poeta da sua vida e que a sua vida seja a utopia que tanto deseja e merece.@@  
+
+  Mais uma vez parabéns, e esta uma de muitas realizações que você atingirá e que Deus lhe proverá.
+  Que ele lhe guie e lhe proteja nessa mais novo caminho de sua caminhada.@@   
+
+  E lembre-se que pode contar comigo, todos os dias, todas horas e todos os anos, que assim como Arquimedes, Dê-me uma alavanca e um ponto de apoio que eu levantarei o mundo para ti.@@   
+
+  Congratulações (ggwp), que essa nova etapa seja coberta de benções, te amo man!! ❤️
+
+  </h2>
+
+  
+  
+
+<script>
+  
+  function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ''; 
+    textoArray.forEach((letra, i) => {
+      if(letra == "@"){        
+        setTimeout(() => elemento.innerHTML += "<br>", 75 * i);
+      }else{
+        setTimeout(() => elemento.innerHTML += letra, 75 * i);
+      }
+      
+    });
+  }
+
+
+  const titulo = document.querySelector('h2');
+  setTimeout(typeWriter(titulo),2000);
+
+  
+  //setTimeout(typeWriter(document.querySelector('h2')),2000);
+  
+
+    
+
+  
+  
+</script>
+
+</body>
+</html>
